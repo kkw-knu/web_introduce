@@ -8,6 +8,9 @@ import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.annotation.WebFilter;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 
 @WebFilter("/*")
@@ -25,8 +28,25 @@ public class KoreaFilter implements Filter {
 
 
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
-		request.setCharacterEncoding("UTF-8");
-		response.setContentType("text/html; charset=UTF-8");
+		HttpServletRequest req = (HttpServletRequest) request;
+		HttpServletResponse resp = (HttpServletResponse) response; 
+		//괜히 필터적용했다가 모든 파일을 text/html파일로 바꿔서 출력해버려서 css가 출력이 되지않았다.
+		req.setCharacterEncoding("UTF-8");
+		
+		String fileUri = req.getRequestURI();
+		
+		if(fileUri.contains(".css")) {
+			resp.setContentType("text/css; charset=UTF-8");
+		}else if(fileUri.contains(".js")){
+			resp.setContentType("text/js; charset=UTF-8");
+		}else if(fileUri.contains(".png")){
+			resp.setContentType("image/png; charset=UTF-8");
+		}else if(fileUri.contains(".jpg")){
+			resp.setContentType("image/jpg; charset=UTF-8");
+		}else {
+			resp.setContentType("text/html; charset=UTF-8");
+		}
+			
 		chain.doFilter(request, response);
 	}
 
