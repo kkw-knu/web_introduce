@@ -26,6 +26,7 @@
 		<link href="/web/css/Footer.css" rel="stylesheet" type="text/css">
 		<link href="/web/css/Homemain.css" rel="stylesheet" type="text/css">
 		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link rel="icon" href="/web/css/tech-icons/favicon.png">
 		<script src="https://kit.fontawesome.com/012d5a0fd2.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
