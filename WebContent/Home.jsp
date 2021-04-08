@@ -59,17 +59,28 @@
 					<h3>🛠 technology i have used 🛠</h3></p>
 					<br>
 					<div class="maintechbox_2">
-						<div class="techimage"><img src="/web/css/tech-icons/gitimage.png" alt="Git"><div>Git</div></div>
-						<div class="techimage"><img src="/web/css/tech-icons/javascriptimage.png" alt="Javascript"><div>Javascript</div></div>
-						<div class="techimage"><img src="/web/css/tech-icons/oracleimage.png" alt="Oracle"><div>Oracle</div></div>
-						<div class="techimage"><img src="/web/css/tech-icons/pythonimage.png" alt="Python"><div>Python</div></div>
-						<div class="techimage"><img src="/web/css/tech-icons/solutionimage.png" alt="solution"><div>Solution</div></div>
-						<div class="techimage"><img src="/web/css/tech-icons/springimage.png" alt="spring"><div>Spring</div></div>
-						<div class="techimage"><img src="/web/css/tech-icons/javaimage.png" alt="java"><div>Java</div></div>
-						<div class="techimage"><img src="/web/css/tech-icons/html5image.png" alt="html5"><div>Html5</div></div>
-						<div class="techimage"><img src="/web/css/tech-icons/css3image.png" alt="css3"><div>Css3</div></div>
-						<div class="techimage"><img src="/web/css/tech-icons/Bootstrapimage.png" alt="Bootstrap"><div>Bootstriap</div></div>
-						<div class="techimage"><img src="/web/css/tech-icons/c_langimage.png" alt="C"><div>C</div></div>
+						<div class="techimage" onclick="location='/web/iconjsp/gitjsp.jsp'">
+						<img src="/web/css/tech-icons/gitimage.png" alt="Git"><div>Git</div></div>
+						<div class="techimage" onclick="location='/web/iconjsp/javascriptjsp.jsp'">
+						<img src="/web/css/tech-icons/javascriptimage.png" alt="Javascript"><div>Javascript</div></div>
+						<div class="techimage" onclick="location='/web/iconjsp/oraclejsp.jsp'">
+						<img src="/web/css/tech-icons/oracleimage.png" alt="Oracle"><div>Oracle</div></div>
+						<div class="techimage" onclick="location='/web/iconjsp/pythonjsp.jsp'">
+						<img src="/web/css/tech-icons/pythonimage.png" alt="Python"><div>Python</div></div>
+						<div class="techimage" onclick="location='/web/iconjsp/solutionjsp.jsp'">
+						<img src="/web/css/tech-icons/solutionimage.png" alt="solution"><div>Solution</div></div>
+						<div class="techimage" onclick="location='/web/iconjsp/springjsp.jsp'">
+						<img src="/web/css/tech-icons/springimage.png" alt="spring"><div>Spring</div></div>
+						<div class="techimage" onclick="location='/web/iconjsp/javajsp.jsp'">
+						<img src="/web/css/tech-icons/javaimage.png" alt="java"><div>Java</div></div>
+						<div class="techimage" onclick="location='/web/iconjsp/html5jsp.jsp'">
+						<img src="/web/css/tech-icons/html5image.png" alt="html5"><div>Html5</div></div>
+						<div class="techimage" onclick="location='/web/iconjsp/css3jsp.jsp'">
+						<img src="/web/css/tech-icons/css3image.png" alt="css3"><div>Css3</div></div>
+						<div class="techimage" onclick="location='/web/iconjsp/bootstrapjsp.jsp'">
+						<img src="/web/css/tech-icons/Bootstrapimage.png" alt="Bootstrap"><div>Bootstriap</div></div>
+						<div class="techimage" onclick="location='/web/iconjsp/cjsp.jsp'">
+						<img src="/web/css/tech-icons/c_langimage.png" alt="C"><div>C</div></div>
 					</div>
 					</div>
 				</div>
