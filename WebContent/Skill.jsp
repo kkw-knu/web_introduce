@@ -49,9 +49,9 @@
 					<div class="bottomtext1"><p>CONTACT</p></div>
 					<div class="contactBar">
 					<a href="https://github.com/kkw-knu"><i class="fab fa-github-square fa-2x"></i></a>
-					<a herf="https://www.instagram.com/_kunw00/"><i class="fab fa-instagram fa-2x"></i></a>
+					<a href="https://www.instagram.com/_kunw00/"><i class="fab fa-instagram fa-2x"></i></a>
 					<a href="https://blog.naver.com/rlarjsdn529"><i class="fas fa-blog fa-2x"></i></a>
-					</div>
+					</div><br>
 					<div class="bottomtext2"><p>누구나 성공하는 방법을 알고있다.</p><br><p>다만 누구도 실천하지 않을 뿐이다.</p></div>
 				</div>
 			</footer>
