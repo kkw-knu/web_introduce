@@ -1,27 +1,28 @@
 @charset "UTF-8";
 
-.NavBar {
-	width: 1000px;
-	height: 100px;
-	position: fixed;
-	border-bottom: 1px solid black;
-	background-color: white;
+.NavBar{
+    width: 1000px; height: 100px;
+    position: fixed;
+    border-bottom: 1px solid black;
+    background-color: white;
 }
-
-.menuBar {
-	width: 170px;
-	height: 100px;
-	float: left;
-	text-align: center;
+.menuBar{
+    width: 170px; height: 100px;
+    float: left;
+    text-align: center;
+    background-color: white;
 }
-
-.menuBar>a {
-	color: black;
-	text-decoration: none;
-	font-size: large;
-	line-height: 150px;
+.menuBar>a{ 
+    color: black;
+    text-decoration:none;
+    font-size:large; 
+    line-height: 150px;
+    transition: all 0.2s ease 0s;
 }
-
+.menuBar:hover>a{
+    font-size: 23px;
+    transition: all 0.1s ease 0s;
+}
 .menuBarimg {
 	width: 100px;
 	height: 100px;
