@@ -42,8 +42,7 @@
 			</header>
 			<main>
 				<div class="Box"></div>
-				<div class="Box"></div>
-				<div style="width: 1000px; height: 500px;">
+				<div style="width: 1000px; height: 500px; margin-top:50px;">
 				<div style="width: 500px; height: 500px;float: left;">
 					<div class="picturebox"></div>
 					<div class="maintext"><p>26세 개구쟁이의 개발자 도전기<br>2021.02.04 ~ ing</p></div>
@@ -70,6 +69,7 @@
 						<div class="techimage"><img src="/web/css/tech-icons/html5image.png" alt="html5"><div>Html5</div></div>
 						<div class="techimage"><img src="/web/css/tech-icons/css3image.png" alt="css3"><div>Css3</div></div>
 						<div class="techimage"><img src="/web/css/tech-icons/Bootstrapimage.png" alt="Bootstrap"><div>Bootstriap</div></div>
+						<div class="techimage"><img src="/web/css/tech-icons/c_langimage.png" alt="C"><div>C</div></div>
 					</div>
 					</div>
 				</div>

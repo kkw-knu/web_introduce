@@ -1,64 +1,35 @@
-.picturebox {
-	margin: 15px 35px 20px 35px;
-	width: 430px;
-	height: 430px;
-	background-image: url("/web/css/mainimage.jpg");
-	background-size: 100%;
-	border-radius: 0%;
+.abouttitle {
+	text-align: center;
+	margin-top: 30px;
 }
 
-.maintext {
-	width: 500px;
-	height: 30px;
-	margin-bottom: 20px;
-	text-align: center;
-	font-size: small;
+.abouttitle>small {
+	display: flex;
+	flex-direction: column;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.superlist>li {
+	margin-top: 10px;
+	margin-left: 24px;
+}
+
+.childlist>li {
+	margin-left: 48px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	list-style: disc;
+	font-size: 14px;
 	color: gray;
-	line-height: 20px;
-}
-
-.namebox {
-	width: 500px;
-	height: 70px;
-	text-align: center;
-	margin-top: 60px;
-}
-
-.namebox>h1>span {
-	font-size: medium;
-	font-weight: 300;
-}
-
-.maintextbox {
-	width: 500px;
-	height: 100px
-}
-
-.maintextbox>div {
-	margin: auto;
-	width: 80%;
-	height: 80px;
-	box-shadow: rgb(0 0 0/ 10%) 0px 0.5rem 1rem;
-}
-
-.maintextbox>div>p {
-	text-align: center;
-	font-size: medium;
-	line-height: 30px;
-	font-weight: lighter;
-	padding: 10px;
-}
-
-.maintechbox_1 {
-	width: 500px;
-	height: 250px;
-	float: left;
+	list-style-type: circle;
 }
 
 .maintechbox_2 {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-evenly;
+	margin-top: 20px;
 }
 
 .techimage {
@@ -109,8 +80,4 @@
 .techimage:hover>div {
 	opacity: 1;
 	transition: all 1s ease 0s;
-}
-
-a {
-	text-decoration: none;
 }

@@ -23,9 +23,10 @@
 	    href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@700&family=Noto+Sans+KR:wght@700&display=swap"
 	    rel="stylesheet">
 	    <link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="/web/css//init.css" rel="stylesheet" type="text/css">
-        <link href="/web/css//Header.css" rel="stylesheet" type="text/css">
-		<link href="/web/css//Footer.css" rel="stylesheet" type="text/css">
+		<link href="/web/css/init.css" rel="stylesheet" type="text/css">
+        <link href="/web/css/Header.css" rel="stylesheet" type="text/css">
+		<link href="/web/css/Footer.css" rel="stylesheet" type="text/css">
+		<link href="/web/css/skillmain.css" rel="stylesheet" type="text/css">
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link rel="icon" href="/web/css/tech-icons/favicon.png">
 		<script src="https://kit.fontawesome.com/012d5a0fd2.js" crossorigin="anonymous"></script>
@@ -43,6 +44,59 @@
 			</header>
 			<main>
 				<div class="Box"></div>
+				<h2 class="skilltitle">저의 주관적인 기술능력은요!</h2>
+				<div class="maintechbox_2">
+						<div class="techimage"><img src="/web/css/tech-icons/gitimage.png" alt="Git"><div>Git</div></div>
+						<progress max="100" value="40" class="probar"></progress>
+						<div class="techimage"><img src="/web/css/tech-icons/javascriptimage.png" alt="Javascript"><div>Javascript</div></div>
+						<progress max="100" value="40" class="probar"></progress>
+						<div class="techimage"><img src="/web/css/tech-icons/oracleimage.png" alt="Oracle"><div>Oracle</div></div>
+						<progress max="100" value="65" class="probar"></progress>
+						<div class="techimage"><img src="/web/css/tech-icons/pythonimage.png" alt="Python"><div>Python</div></div>
+						<progress max="100" value="25" class="probar"></progress>
+						<div class="techimage"><img src="/web/css/tech-icons/solutionimage.png" alt="solution"><div>Solution</div></div>
+						<progress max="100" value="70" class="probar"></progress>
+						<div class="techimage"><img src="/web/css/tech-icons/springimage.png" alt="spring"><div>Spring</div></div>
+						<progress max="100" value="20" class="probar"></progress>
+						<div class="techimage"><img src="/web/css/tech-icons/javaimage.png" alt="java"><div>Java</div></div>
+						<progress max="100" value="70" class="probar"></progress>
+						<div class="techimage"><img src="/web/css/tech-icons/html5image.png" alt="html5"><div>Html5</div></div>
+						<progress max="100" value="60" class="probar"></progress>
+						<div class="techimage"><img src="/web/css/tech-icons/css3image.png" alt="css3"><div>Css3</div></div>
+						<progress max="100" value="50" class="probar"></progress>
+						<div class="techimage"><img src="/web/css/tech-icons/Bootstrapimage.png" alt="Bootstrap"><div>Bootstriap</div></div>
+						<progress max="100" value="25" class="probar"></progress>
+						<div class="techimage"><img src="/web/css/tech-icons/c_langimage.png" alt="C"><div>C</div></div>
+						<progress max="100" value="60" class="probar"></progress>
+					</div>
+					<h2 class="skilltitle">이것저것!</h2>
+				<div style="width: 1000;">
+					<div class="workbox">
+						<article class="imagebox">
+							<img src="/web/css/homepage.PNG" alt="homepage make">
+							<h2>나만의 홈페이지만들기</h2>
+							<p>개인만의 포트폴리오 공간</p>
+						</article>
+						<article class="imagebox">
+							<img src="http://placehold.it/300x300.jpg" alt="test">
+							<h2>test</h2>
+							<p>test</p>
+						</article>
+						<article class="imagebox">
+							<img src="http://placehold.it/300x300.jpg" alt="test">
+							<h2>test</h2>
+							<p>test</p>
+						</article><article class="imagebox">
+							<img src="http://placehold.it/300x300.jpg" alt="test">
+							<h2>test</h2>
+							<p>test</p>
+						</article><article class="imagebox">
+							<img src="http://placehold.it/300x300.jpg" alt="test">
+							<h2>test</h2>
+							<p>test</p>
+						</article>
+					</div>
+				</div>
 			</main>
 			<footer>
 				<div class="Box"></div>

@@ -1,58 +1,7 @@
-.picturebox {
-	margin: 15px 35px 20px 35px;
-	width: 430px;
-	height: 430px;
-	background-image: url("/web/css/mainimage.jpg");
-	background-size: 100%;
-	border-radius: 0%;
-}
-
-.maintext {
-	width: 500px;
-	height: 30px;
-	margin-bottom: 20px;
+.skilltitle {
 	text-align: center;
-	font-size: small;
-	color: gray;
-	line-height: 20px;
-}
-
-.namebox {
-	width: 500px;
-	height: 70px;
-	text-align: center;
-	margin-top: 60px;
-}
-
-.namebox>h1>span {
-	font-size: medium;
-	font-weight: 300;
-}
-
-.maintextbox {
-	width: 500px;
-	height: 100px
-}
-
-.maintextbox>div {
-	margin: auto;
-	width: 80%;
-	height: 80px;
-	box-shadow: rgb(0 0 0/ 10%) 0px 0.5rem 1rem;
-}
-
-.maintextbox>div>p {
-	text-align: center;
-	font-size: medium;
-	line-height: 30px;
-	font-weight: lighter;
-	padding: 10px;
-}
-
-.maintechbox_1 {
-	width: 500px;
-	height: 250px;
-	float: left;
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 
 .maintechbox_2 {
@@ -64,9 +13,9 @@
 .techimage {
 	cursor: pointer;
 	position: relative;
-	width: 60px;
-	height: 60px;
-	margin: 8px;
+	width: 100px;
+	height: 100px;
+	margin: 15px 8px 8px 8px;
 	transition: all 0.1s ease 0s;
 }
 
@@ -113,4 +62,46 @@
 
 a {
 	text-decoration: none;
+}
+
+.probar {
+	margin-top: 50px;
+	margin-left: 10px;
+	margin-right: 20px;
+}
+
+.workbox {
+	display: flex;
+	flex-flow: row wrap; /*자동조절*/
+	justify-content: space-between; /*같은 간격조절*/
+}
+
+.workbox>* {
+	flex-grow: 1;
+	flex-shrink: 0;
+	flex-basis: 300px;
+	margin: 15px;
+}
+
+.imagebox {
+	cursor: pointer;
+	transition: all 0.2s ease 0s;
+}
+
+.imagebox>* {
+	width: 100%;;
+	margin: 4px 0px;
+	transition: all 0.2s ease 0s;
+}
+
+.imagebox>img {
+	border-radius: 8px;
+	max-height: 400px;
+	object-fit: cover;
+	transition: all 0.2s ease 0s;
+}
+
+.imagebox:hover>* {
+	width: 103%;
+	transition: all 0.2s ease 0s;
 }
