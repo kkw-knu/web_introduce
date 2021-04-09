@@ -88,10 +88,10 @@
 							<h2>나만의 홈페이지만들기</h2>
 							<p>개인만의 포트폴리오 공간</p>
 						</article>
-						<article class="imagebox">
-							<img src="http://placehold.it/300x300.jpg" alt="test">
-							<h2>test</h2>
-							<p>test</p>
+						<article class="imagebox" onclick="location='/web/projectjsp/raspberrypijsp.jsp'">
+							<img src="/web/css/image/raspberrypi.PNG" alt="raspberrypi">
+							<h2>라즈베리파이 입문</h2>
+							<p>라즈베리파이 모듈별 동작</p>
 						</article>
 						<article class="imagebox">
 							<img src="http://placehold.it/300x300.jpg" alt="test">

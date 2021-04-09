@@ -50,10 +50,10 @@
 					<div style="display: flex; flex-direction: column; align-items: center;">
 						<h2 style="margin: 15px;">관련 포스팅</h2>
 						<div class="workbox">
-							<article class="imagebox">
-								<img src="http://placehold.it/300x300.jpg" alt="test">
-								<h2>test</h2>
-								<p>test</p>
+							<article class="imagebox" onclick="location='/web/projectjsp/raspberrypijsp.jsp'">
+								<img src="/web/css/image/raspberrypi.PNG" alt="raspberrypi">
+								<h2>라즈베리파이 입문</h2>
+								<p>라즈베리파이 모듈별 동작</p>
 							</article>
 							<article class="imagebox">
 								<img src="http://placehold.it/300x300.jpg" alt="test">

@@ -40,30 +40,18 @@
 				<div class="Box"></div>
 				<div class="container">
 					<div class="container_1">
-						<img src="/web/css/homepage.PNG" alt="homepage">
+						<img src="/web/css/image/raspberrypi.PNG" alt="raspberrypi">
 					</div>
 					<div class="container_2">
-						<h2>웹 페이지 개발 : 나만의 홈페이지 만들기</h2>
+						<h2>라즈베리파이 입문</h2>
 						<br>
-						<p>개인만의 포트폴리오 공간</p>
-						<a class="textbox" href="https://blog.naver.com/rlarjsdn529/222302447911">&nbsp;&nbsp;블로그 보기&nbsp;&nbsp;</a>
-						<a class="textbox" href="https://github.com/kkw-knu/web_introduce/tree/master/WebContent">&nbsp;&nbsp;git으로 보기&nbsp;&nbsp;</a>
+						<p>라즈베리파이 모듈별 동작</p>
+						<a class="textbox" href="https://blog.naver.com/rlarjsdn529/222255511624">&nbsp;&nbsp;블로그 보기&nbsp;&nbsp;</a>
+						<a class="textbox" href="https://github.com/kkw-knu/raspberrypi4">&nbsp;&nbsp;git으로 보기&nbsp;&nbsp;</a>
 						<br>
 						<div class="maintechbox_2">
-							<div class="techimage" onclick="location='/web/iconjsp/javascriptjsp.jsp'"><img src="/web/css/tech-icons/javascriptimage.png" alt="Javascript">
-								<div>Javascript</div>
-							</div>
-							<div class="techimage" onclick="location='/web/iconjsp/oraclejsp.jsp'"><img src="/web/css/tech-icons/oracleimage.png" alt="Oracle">
-								<div>Oracle</div>
-							</div>
-							<div class="techimage" onclick="location='/web/iconjsp/javajsp.jsp'"><img src="/web/css/tech-icons/javaimage.png" alt="java">
-								<div>java</div>
-							</div>
-							<div class="techimage" onclick="location='/web/iconjsp/html5jsp.jsp'"><img src="/web/css/tech-icons/html5image.png" alt="html5">
-								<div>html5</div>
-							</div>
-							<div class="techimage" onclick="location='/web/iconjsp/css3jsp.jsp'"><img src="/web/css/tech-icons/css3image.png" alt="css3">
-								<div>css3</div>
+							<div class="techimage" onclick="location='/web/iconjsp/pythonjsp.jsp'"><img src="/web/css/tech-icons/pythonimage.png" alt="python">
+								<div>python</div>
 							</div>
 						</div>
 					</div>

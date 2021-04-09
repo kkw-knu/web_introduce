@@ -1,77 +1,95 @@
-.container{
-    height: 70vh;
-    display: flex;
-    flex-direction: row wrap;
-    align-items: center;
-    margin-top: 30px;
+.container {
+	height: 70vh;
+	display: flex;
+	flex-direction: row wrap;
+	align-items: center;
+	margin-top: 30px;
 }
-.container_1{
-    display: flex;
-    flex-direction: column;
-    margin-right: 15px;
+
+.container_1 {
+	display: flex;
+	flex-direction: column;
+	margin-right: 15px;
 }
-.container_1>img{
-    display: flex;
-    flex-grow: 1;
-    flex-shrink: 0;
-    flex-basis: 200px;
-    width: 450px;
-    height: 450px;
+
+.container_1>img {
+	display: flex;
+	flex-grow: 1;
+	flex-shrink: 0;
+	flex-basis: 200px;
+	width: 450px;
+	height: 450px;
 }
-.container_2{
-    display: flex;
-    flex-direction: column;
+
+.container_2 {
+	display: flex;
+	flex-direction: column;
 }
-a{
-    text-decoration:none;
-    text-align: center;
-    line-height: 30px;
-    color: black;
+
+a {
+	text-decoration: none;
+	text-align: center;
+	line-height: 30px;
+	color: black;
 }
-.maintechbox_2{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
+
+.maintechbox_2 {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
 }
-.techimage{
-    cursor: pointer;
-    position: relative;
-    width: 50px;
-    height: 50px;
-    margin: 8px;
-    transition: all 0.1s ease 0s;
+
+.techimage {
+	cursor: pointer;
+	position: relative;
+	width: 50px;
+	height: 50px;
+	margin: 8px;
+	transition: all 0.1s ease 0s;
 }
-.techimage>img{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    transition: all 0.1s ease 0s;
-    opacity: 1;
+
+.techimage>img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	transition: all 0.1s ease 0s;
+	opacity: 1;
 }
-.techimage:hover>img{
-    transition: all 0.1s ease 0s;
-    transform: scale(1.1);
-    opacity: 0.3;
+
+.techimage:hover>img {
+	transition: all 0.1s ease 0s;
+	transform: scale(1.1);
+	opacity: 0.3;
 }
-.techimage>div{
-    position: absolute;
-    display: flex;
-    -webkit-box-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    align-items: center;
-    user-select: none;
-    opacity: 0;
-    width: 100%;
-    height: 100%;
-    font-size: 12px;
-    font-weight: bold;
-    text-align: center;
-    margin: auto;
-    transition: all 0.5s ease 0s;
+
+.techimage>div {
+	position: absolute;
+	display: flex;
+	-webkit-box-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	align-items: center;
+	user-select: none;
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	margin: auto;
+	transition: all 0.5s ease 0s;
 }
-.techimage:hover>div{
-    opacity: 1;
-    transition: all 1s ease 0s;
+
+.techimage:hover>div {
+	opacity: 1;
+	transition: all 1s ease 0s;
+}
+
+.textbox {
+	width: 150px;
+	height: 30px;
+	background-color: rgb(230, 230, 230);
+	margin-left: 15px;
+	margin-top: 5px;
 }
