@@ -17,9 +17,10 @@
 	    href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@700&family=Noto+Sans+KR:wght@700&display=swap"
 	    rel="stylesheet">
 	    <link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="/web/css//init.css" rel="stylesheet" type="text/css">
-        <link href="/web/css//Header.css" rel="stylesheet" type="text/css">
-		<link href="/web/css//Footer.css" rel="stylesheet" type="text/css">
+		<link href="/web/css/init.css" rel="stylesheet" type="text/css">
+        <link href="/web/css/Header.css" rel="stylesheet" type="text/css">
+		<link href="/web/css/Footer.css" rel="stylesheet" type="text/css">
+		<link href="/web/css/explanationproject.css" rel="stylesheet" type="text/css">
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link rel="icon" href="/web/css/tech-icons/favicon.png">
 		<script src="https://kit.fontawesome.com/012d5a0fd2.js" crossorigin="anonymous"></script>
@@ -37,6 +38,34 @@
 			</header>
 			<main>
 				<div class="Box"></div>
+				<div class="container">
+					<div class="container_1">
+						<img src="/web/css/homepage.PNG" alt="homepage">
+					</div>
+					<div class="container_2">
+						<h2>웹 페이지 개발 : 나만의 홈페이지 만들기</h2>
+						<br>
+						<p>개인만의 포트폴리오 공간 <a style="width: 150px; height: 30px; background-color: rgb(230, 230, 230); margin-left: 15px;" href="https://blog.naver.com/rlarjsdn529/222302447911">&nbsp;&nbsp;더보러가기&nbsp;&nbsp;</a></p>
+						<br>
+						<div class="maintechbox_2">
+							<div class="techimage" onclick="location='/web/iconjsp/javascriptjsp.jsp'"><img src="/web/css/tech-icons/javascriptimage.png" alt="Javascript">
+								<div>Javascript</div>
+							</div>
+							<div class="techimage" onclick="location='/web/iconjsp/oraclejsp.jsp'"><img src="/web/css/tech-icons/oracleimage.png" alt="Oracle">
+								<div>Oracle</div>
+							</div>
+							<div class="techimage" onclick="location='/web/iconjsp/javajsp.jsp'"><img src="/web/css/tech-icons/javaimage.png" alt="java">
+								<div>java</div>
+							</div>
+							<div class="techimage" onclick="location='/web/iconjsp/html5jsp.jsp'"><img src="/web/css/tech-icons/html5image.png" alt="html5">
+								<div>html5</div>
+							</div>
+							<div class="techimage" onclick="location='/web/iconjsp/css3jsp.jsp'"><img src="/web/css/tech-icons/css3image.png" alt="css3">
+								<div>css3</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</main>
 			<footer>
 				<div class="Box"></div>

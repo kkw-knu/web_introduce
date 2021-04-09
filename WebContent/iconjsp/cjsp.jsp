@@ -17,9 +17,10 @@
 	    href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@700&family=Noto+Sans+KR:wght@700&display=swap"
 	    rel="stylesheet">
 	    <link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="/web/css//init.css" rel="stylesheet" type="text/css">
-        <link href="/web/css//Header.css" rel="stylesheet" type="text/css">
-		<link href="/web/css//Footer.css" rel="stylesheet" type="text/css">
+		<link href="/web/css/init.css" rel="stylesheet" type="text/css">
+        <link href="/web/css/Header.css" rel="stylesheet" type="text/css">
+		<link href="/web/css/Footer.css" rel="stylesheet" type="text/css">
+		<link href="/web/css/icon.css" rel="stylesheet" type="text/css">
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link rel="icon" href="/web/css/tech-icons/favicon.png">
 		<script src="https://kit.fontawesome.com/012d5a0fd2.js" crossorigin="anonymous"></script>
@@ -37,6 +38,15 @@
 			</header>
 			<main>
 				<div class="Box"></div>
+				<div class="big_2">
+					<div class="small">
+						<img src="/web/css/tech-icons/c_langimage.png" alt="c언어">
+						<h2 class="textcsenter">C언어</h2>
+						<br>
+						<p>시스템기술에 적합한 프로그래밍 언어</p>
+						<br>
+					</div>
+				</div>
 			</main>
 			<footer>
 				<div class="Box"></div>

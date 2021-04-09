@@ -17,9 +17,10 @@
 	    href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@700&family=Noto+Sans+KR:wght@700&display=swap"
 	    rel="stylesheet">
 	    <link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="/web/css//init.css" rel="stylesheet" type="text/css">
-        <link href="/web/css//Header.css" rel="stylesheet" type="text/css">
-		<link href="/web/css//Footer.css" rel="stylesheet" type="text/css">
+		<link href="/web/css/init.css" rel="stylesheet" type="text/css">
+        <link href="/web/css/Header.css" rel="stylesheet" type="text/css">
+		<link href="/web/css/Footer.css" rel="stylesheet" type="text/css">
+		<link href="/web/css/icon.css" rel="stylesheet" type="text/css">
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link rel="icon" href="/web/css/tech-icons/favicon.png">
 		<script src="https://kit.fontawesome.com/012d5a0fd2.js" crossorigin="anonymous"></script>
@@ -37,6 +38,49 @@
 			</header>
 			<main>
 				<div class="Box"></div>
+				<div class="big">
+					<div class="small">
+						<img src="/web/css/tech-icons/springimage.png" alt="spring">
+						<br>
+						<h2 class="textcsenter">Spring</h2>
+						<br>
+						<p>Java / Kotlin 기반의 웹 프레임워크</p>
+						<br>
+					</div>
+					<div style="display: flex; flex-direction: column; align-items: center;">
+						<h2 style="margin: 15px;">관련 포스팅</h2>
+						<div class="workbox">
+							<article class="imagebox">
+								<img src="http://placehold.it/300x300.jpg" alt="test">
+								<h2>test</h2>
+								<p>test</p>
+							</article>
+							<article class="imagebox">
+								<img src="http://placehold.it/300x300.jpg" alt="test">
+								<h2>test</h2>
+								<p>test</p>
+							</article><article class="imagebox">
+								<img src="http://placehold.it/300x300.jpg" alt="test">
+								<h2>test</h2>
+								<p>test</p>
+							</article><article class="imagebox">
+								<img src="http://placehold.it/300x300.jpg" alt="test">
+								<h2>test</h2>
+								<p>test</p>
+							</article>
+							</article><article class="imagebox">
+								<img src="http://placehold.it/300x300.jpg" alt="test">
+								<h2>test</h2>
+								<p>test</p>
+							</article>
+							</article><article class="imagebox">
+								<img src="http://placehold.it/300x300.jpg" alt="test">
+								<h2>test</h2>
+								<p>test</p>
+							</article>
+						</div>
+					</div>
+				</div>
 			</main>
 			<footer>
 				<div class="Box"></div>

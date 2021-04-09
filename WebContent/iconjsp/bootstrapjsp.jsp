@@ -17,9 +17,10 @@
 	    href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@700&family=Noto+Sans+KR:wght@700&display=swap"
 	    rel="stylesheet">
 	    <link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="/web/css//init.css" rel="stylesheet" type="text/css">
-        <link href="/web/css//Header.css" rel="stylesheet" type="text/css">
-		<link href="/web/css//Footer.css" rel="stylesheet" type="text/css">
+		<link href="/web/css/init.css" rel="stylesheet" type="text/css">
+        <link href="/web/css/Header.css" rel="stylesheet" type="text/css">
+		<link href="/web/css/Footer.css" rel="stylesheet" type="text/css">
+		<link href="/web/css/icon.css" rel="stylesheet" type="text/css">
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link rel="icon" href="/web/css/tech-icons/favicon.png">
 		<script src="https://kit.fontawesome.com/012d5a0fd2.js" crossorigin="anonymous"></script>
@@ -37,6 +38,16 @@
 			</header>
 			<main>
 				<div class="Box"></div>
+				<div class="big_2">
+					<div class="small">
+						<img src="/web/css/tech-icons/Bootstrapimage.png" alt="bootstrap">
+						<h2 class="textcsenter">Bootstrap</h2>
+						<br>
+						<p>웹 사이트나 웹 응용 프로그램들을 작성하기 위해 사용하는 무료 소프트웨어 도구 모음</p>
+						<br>
+						<a style="width: 150px; height: 30px; background-color: rgb(240, 240, 240);" href="https://getbootstrap.com/">자세히 보기</a>
+					</div>
+				</div>
 			</main>
 			<footer>
 				<div class="Box"></div>

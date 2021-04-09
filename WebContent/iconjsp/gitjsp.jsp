@@ -17,9 +17,10 @@
 	    href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@700&family=Noto+Sans+KR:wght@700&display=swap"
 	    rel="stylesheet">
 	    <link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="/web/css//init.css" rel="stylesheet" type="text/css">
-        <link href="/web/css//Header.css" rel="stylesheet" type="text/css">
-		<link href="/web/css//Footer.css" rel="stylesheet" type="text/css">
+		<link href="/web/css/init.css" rel="stylesheet" type="text/css">
+        <link href="/web/css/Header.css" rel="stylesheet" type="text/css">
+		<link href="/web/css/Footer.css" rel="stylesheet" type="text/css">
+		<link href="/web/css/icon.css" rel="stylesheet" type="text/css">
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link rel="icon" href="/web/css/tech-icons/favicon.png">
 		<script src="https://kit.fontawesome.com/012d5a0fd2.js" crossorigin="anonymous"></script>
@@ -37,6 +38,19 @@
 			</header>
 			<main>
 				<div class="Box"></div>
+				<div class="big_2">
+					<div class="small">
+						<img src="/web/css/tech-icons/gitimage.png" alt="git">
+						<br>
+						<h2 class="textcsenter">Git</h2>
+						<br>
+						<p>분산 소스 버전 관리 시스템</p>
+						<br>
+						<p>개발자의 github가 궁금하다면?</p>
+						<br>
+						<a style="width: 150px; height: 30px; background-color: rgb(240, 240, 240);" href="https://github.com/kkw-knu">자세히 보기</a>
+					</div>
+				</div>
 			</main>
 			<footer>
 				<div class="Box"></div>
