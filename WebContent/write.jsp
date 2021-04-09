@@ -1,10 +1,6 @@
 <% request.setCharacterEncoding("UTF-8"); %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ page import="java.io.PrintWriter"%>
-<%@ page import="info.InfoDAO"%>
-<%@ page import="info.Info"%>
-<%@ page import="java.util.ArrayList"%>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -29,12 +25,6 @@
 		<script src="https://kit.fontawesome.com/012d5a0fd2.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
-	<%
-//		int pageNumber = 1; //기본페이지를 의미한다
-//		if(request.getParameter("pageNumber") !=null){ //parameter에 값이 넘어온순간
-//			pageNumber = Integer.parseInt(request.getParameter("pageNumber"));
-//		}
-	%>
 		<div>
 			<header class="NavBar">
 				<nav>
@@ -47,36 +37,30 @@
 			</header>
 			<main>
 			<div class="Box"></div>
-				<table border="1" style="width:600px; margin:0 auto; text-align:center; margin-top:20px;">
+			<form method="post" action="writeAction.jsp">
+				<table border="1" style="width:600px; margin:0 auto; text-align:left; margin-top:20px;">
 					<thead>
 						<tr>
-							<th style="width:70px;">번호</th>
-							<th style="width:230px;">제목</th>
-							<th style="width:100px;">작성자</th>
-							<th style="width:200px;">작성일</th>
+							<th colspan="2">게시판 글쓰기 양식</th>
 						</tr>
 					</thead>
 					<tbody>
-					<%!
-						InfoDAO infoDAO = new InfoDAO();
-						ArrayList<Info> list = infoDAO.getList();
-					%>
-					<%
-						for(int i=0; i<list.size(); i++){
-					%>
-					<tr>
-						<td><%= list.get(i).getInfoID() %></td>
-						<td><a href="view.jsp?infoID=<%= list.get(i).getInfoID() %>">
-						<%= list.get(i).getInfoTitle().replaceAll(" ", "&nbsp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll("\n", "<br>") %></a></td>
-						<td><%= list.get(i).getUserID() %></td>
-						<td><%= list.get(i).getInfoDate() %></td>
-					</tr>
-					<%
-						}
-					%>
+						<tr>
+							<td><input type="text" placeholder="글 제목을 입력하세요" name="infoTitle" maxlength="50" style="width:100%;"></td>
+						</tr>
+						<tr>
+							<td><textarea placeholder="글 내용을 입력하세요" name="infoContent" maxlength="2024" style="height:350px; width:100%;"></textarea></td>
+						</tr>
+						<tr>
+							<td>ID : <input type="text" placeholder="아이디를 입력하세요" name="userID" maxlength="20" style="width:90%;"></td>  
+						</tr>
+						<tr>
+							<td>PW : <input type="password" placeholder="비밀번호를 입력하세요" name="userPW" maxlength="20" style="width:90%;"></td>  
+						</tr>
 					</tbody>
 				</table>
-				<a href="write.jsp">글쓰기</a>
+				<input type="submit" value="글쓰기">
+			</form>	
 			</main>
 			<footer>
 				<div class="Box"></div>

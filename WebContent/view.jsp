@@ -1,10 +1,9 @@
 <% request.setCharacterEncoding("UTF-8"); %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ page import="java.io.PrintWriter"%>
-<%@ page import="info.InfoDAO"%>
-<%@ page import="info.Info"%>
-<%@ page import="java.util.ArrayList"%>
+   <%@ page import="java.io.PrintWriter"%>
+   <%@ page import="info.Info" %>
+   <%@ page import="info.InfoDAO" %>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -29,12 +28,6 @@
 		<script src="https://kit.fontawesome.com/012d5a0fd2.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
-	<%
-//		int pageNumber = 1; //기본페이지를 의미한다
-//		if(request.getParameter("pageNumber") !=null){ //parameter에 값이 넘어온순간
-//			pageNumber = Integer.parseInt(request.getParameter("pageNumber"));
-//		}
-	%>
 		<div>
 			<header class="NavBar">
 				<nav>
@@ -46,37 +39,50 @@
 				</nav>
 			</header>
 			<main>
+			<%
+				int infoID = 0;
+				if(request.getParameter("infoID") !=null){
+					infoID = Integer.parseInt(request.getParameter("infoID"));
+				}
+				if(infoID==0){//번호가 반드시 존재해야함
+					PrintWriter script = response.getWriter();
+					script.println("<script>");
+					script.println("alter('유효하지 않습니다.')");
+					script.println("history.back()");
+					script.println("</script>");
+				}
+				Info info = new InfoDAO().getInfo(infoID);
+			%>
 			<div class="Box"></div>
 				<table border="1" style="width:600px; margin:0 auto; text-align:center; margin-top:20px;">
 					<thead>
 						<tr>
-							<th style="width:70px;">번호</th>
-							<th style="width:230px;">제목</th>
-							<th style="width:100px;">작성자</th>
-							<th style="width:200px;">작성일</th>
+							<th colspan="2">게시판 글 보기</th>
 						</tr>
 					</thead>
 					<tbody>
-					<%!
-						InfoDAO infoDAO = new InfoDAO();
-						ArrayList<Info> list = infoDAO.getList();
-					%>
-					<%
-						for(int i=0; i<list.size(); i++){
-					%>
-					<tr>
-						<td><%= list.get(i).getInfoID() %></td>
-						<td><a href="view.jsp?infoID=<%= list.get(i).getInfoID() %>">
-						<%= list.get(i).getInfoTitle().replaceAll(" ", "&nbsp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll("\n", "<br>") %></a></td>
-						<td><%= list.get(i).getUserID() %></td>
-						<td><%= list.get(i).getInfoDate() %></td>
-					</tr>
-					<%
-						}
-					%>
+						<tr>
+							<td style="width:20%; text-align:left;">글 제목</td>
+							<td colspan="2"><%=info.getInfoTitle() %></td>
+						</tr>
+						<tr>
+							<td>작성자</td>
+							<td colspan="2" style="text-align:left;"><%=info.getUserID()%></td>
+						</tr>
+						<tr>
+							<td>작성일자</td>
+							<td colspan="2" style="text-align:left;"><%=info.getInfoDate() %></td>
+						</tr>
+						<tr>
+							<td>내용</td>
+							<td colspan="2" style="text-align:left; height:300px;">
+							<%=info.getInfoContent().replaceAll(" ", "&nbsp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll("\n", "<br>") %></td>
+						</tr>
 					</tbody>
 				</table>
-				<a href="write.jsp">글쓰기</a>
+				<a href="QnA.jsp">목록</a>
+				<a href="update.jsp?infoID=<%= infoID %>">수정</a>
+				<a href="deleteAction.jsp?infoID=<%= infoID %>">삭제</a>
 			</main>
 			<footer>
 				<div class="Box"></div>
