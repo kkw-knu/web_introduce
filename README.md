@@ -1,1 +1,5 @@
-# web_introduce
+# web_introduc
+
+저의 웹페이지를 만드는 과정입니다.
+
+master에 올려두었으니 확인해보실분은 들어가보시길 바랍니다.
