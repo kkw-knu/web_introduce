@@ -62,8 +62,8 @@
 					</thead>
 					<tbody>
 						<tr>
-							<td style="width:20%; text-align:left;">글 제목</td>
-							<td colspan="2"><%=info.getInfoTitle() %></td>
+							<td style="width:20%;">글 제목</td>
+							<td colspan="2" style="text-align:left;"><%=info.getInfoTitle() %></td>
 						</tr>
 						<tr>
 							<td>작성자</td>

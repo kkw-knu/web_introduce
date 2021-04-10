@@ -50,18 +50,16 @@
 				<table border="1" style="width:600px; margin:0 auto; text-align:center; margin-top:20px;">
 					<thead>
 						<tr>
-							<th style="width:70px;">번호</th>
+							<th style="width:70px; ">번호</th>
 							<th style="width:230px;">제목</th>
 							<th style="width:100px;">작성자</th>
 							<th style="width:200px;">작성일</th>
 						</tr>
 					</thead>
 					<tbody>
-					<%!
+					<%
 						InfoDAO infoDAO = new InfoDAO();
 						ArrayList<Info> list = infoDAO.getList();
-					%>
-					<%
 						for(int i=0; i<list.size(); i++){
 					%>
 					<tr>
