@@ -40,49 +40,37 @@
 			</header>
 			<main>
 			<%
-				int infoID = 0;
-				if(request.getParameter("infoID") !=null){
-					infoID = Integer.parseInt(request.getParameter("infoID"));
-				}
-				if(infoID==0){//번호가 반드시 존재해야함
-					PrintWriter script = response.getWriter();
-					script.println("<script>");
-					script.println("alert('유효하지 않습니다.')");
-					script.println("history.back()");
-					script.println("</script>");
-				}
-				Info info = new InfoDAO().getInfo(infoID);
+			
+			int infoID = 0;
+			if(request.getParameter("infoID")!=null){
+				infoID = Integer.parseInt(request.getParameter("infoID"));
+			}
+			if(infoID==0){
+				PrintWriter script = response.getWriter();
+				script.println("<script>");
+				script.println("alert('유효하지않습니다.')");
+				script.println("location.href='QnA.jsp'");
+				script.println("</script>");
+			}
+			Info info = new InfoDAO().getInfo(infoID);
+			
 			%>
 			<div class="Box"></div>
-				<table border="1" style="width:600px; margin:0 auto; text-align:center; margin-top:20px;">
+			<form method="post" action="deleteAction.jsp?infoID=<%= infoID%>">
+				<table border="1" style="width:600px; margin:0 auto; text-align:left; margin-top:20px;">
 					<thead>
 						<tr>
-							<th colspan="2">게시판 글 보기</th>
+							<th colspan="2">게시글 비밀번호</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
-							<td style="width:20%; text-align:left;">글 제목</td>
-							<td colspan="2"><%=info.getInfoTitle() %></td>
-						</tr>
-						<tr>
-							<td>작성자</td>
-							<td colspan="2" style="text-align:left;"><%=info.getUserID()%></td>
-						</tr>
-						<tr>
-							<td>작성일자</td>
-							<td colspan="2" style="text-align:left;"><%=info.getInfoDate() %></td>
-						</tr>
-						<tr>
-							<td>내용</td>
-							<td colspan="2" style="text-align:left; height:300px;">
-							<%=info.getInfoContent().replaceAll(" ", "&nbsp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll("\n", "<br>") %></td>
+							<td>PW : <input type="password" placeholder="비밀번호를 입력하세요" name="userPW" maxlength="20" style="width:90%;"></td>  
 						</tr>
 					</tbody>
 				</table>
-				<a href="QnA.jsp">[목록]</a>
-				<a href="update.jsp?infoID=<%= infoID %>">[수정]</a>
-				<a href="delete.jsp?infoID=<%= infoID %>">[삭제]</a>
+				<input onclick="return confirm('정말로 삭제하시겠습니다?')" type="submit" value="글삭제">
+			</form>	
 			</main>
 			<footer>
 				<div class="Box"></div>

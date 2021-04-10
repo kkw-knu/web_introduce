@@ -76,7 +76,7 @@
 					%>
 					</tbody>
 				</table>
-				<a href="write.jsp">글쓰기</a>
+				<a href="write.jsp">[글쓰기]</a>
 			</main>
 			<footer>
 				<div class="Box"></div>

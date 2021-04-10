@@ -14,8 +14,11 @@
 	<meta name="author" content="kim kun woo">
 	<meta lang="ko">
 	<title>introduce | kkw</title>
-    <style>
-    </style>
+    <script>
+    function check(){
+    	var password = prompt('비밀번호를 입력하세요');
+    }
+    </script>
         <link
 	    href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@700&family=Noto+Sans+KR:wght@700&display=swap"
 	    rel="stylesheet">
@@ -40,49 +43,43 @@
 			</header>
 			<main>
 			<%
-				int infoID = 0;
-				if(request.getParameter("infoID") !=null){
-					infoID = Integer.parseInt(request.getParameter("infoID"));
-				}
-				if(infoID==0){//번호가 반드시 존재해야함
-					PrintWriter script = response.getWriter();
-					script.println("<script>");
-					script.println("alert('유효하지 않습니다.')");
-					script.println("history.back()");
-					script.println("</script>");
-				}
-				Info info = new InfoDAO().getInfo(infoID);
+			
+			int infoID = 0;
+			if(request.getParameter("infoID")!=null){
+				infoID = Integer.parseInt(request.getParameter("infoID"));
+			}
+			if(infoID==0){
+				PrintWriter script = response.getWriter();
+				script.println("<script>");
+				script.println("alert('유효하지않습니다.')");
+				script.println("location.href='QnA.jsp'");
+				script.println("</script>");
+			}
+			Info info = new InfoDAO().getInfo(infoID);
+			
 			%>
 			<div class="Box"></div>
-				<table border="1" style="width:600px; margin:0 auto; text-align:center; margin-top:20px;">
+			<form method="post" action="updateAction.jsp?infoID=<%= infoID%>">
+				<table border="1" style="width:600px; margin:0 auto; text-align:left; margin-top:20px;">
 					<thead>
 						<tr>
-							<th colspan="2">게시판 글 보기</th>
+							<th colspan="2" style="text-align:center;">게시판 수정</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
-							<td style="width:20%; text-align:left;">글 제목</td>
-							<td colspan="2"><%=info.getInfoTitle() %></td>
+							<td><input type="text" placeholder="글 제목을 입력하세요" name="infoTitle" maxlength="50" style="width:100%;" value="<%=info.getInfoTitle() %>"></td>
 						</tr>
 						<tr>
-							<td>작성자</td>
-							<td colspan="2" style="text-align:left;"><%=info.getUserID()%></td>
+							<td><textarea placeholder="글 내용을 입력하세요" name="infoContent" maxlength="2024" style="height:350px; width:100%;"><%=info.getInfoContent()%></textarea></td>
 						</tr>
 						<tr>
-							<td>작성일자</td>
-							<td colspan="2" style="text-align:left;"><%=info.getInfoDate() %></td>
-						</tr>
-						<tr>
-							<td>내용</td>
-							<td colspan="2" style="text-align:left; height:300px;">
-							<%=info.getInfoContent().replaceAll(" ", "&nbsp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll("\n", "<br>") %></td>
+							<td>PW : <input type="password" placeholder="비밀번호를 입력하세요" name="userPW" maxlength="20" style="width:90%;"></td>  
 						</tr>
 					</tbody>
 				</table>
-				<a href="QnA.jsp">[목록]</a>
-				<a href="update.jsp?infoID=<%= infoID %>">[수정]</a>
-				<a href="delete.jsp?infoID=<%= infoID %>">[삭제]</a>
+				<input type="submit" value="글수정">
+			</form>	
 			</main>
 			<footer>
 				<div class="Box"></div>

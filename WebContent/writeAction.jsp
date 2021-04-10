@@ -2,6 +2,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ page import="info.InfoDAO"%>
+<%@ page import="info.Info"%>
 <%@ page import="java.io.PrintWriter"%>
 <jsp:useBean id="info" class="info.Info" scope="page"/>
 <jsp:setProperty name="info" property="infoTitle"/>
@@ -24,7 +25,7 @@
 	if(info.getInfoTitle()==null||info.getInfoContent()==null||info.getUserID()==null||info.getUserPW()==null){
 		PrintWriter script = response.getWriter();
 		script.println("<script>");
-		script.println("alter('모두 입력해주세요.')");
+		script.println("alert('모두 입력해주세요.')");
 		script.println("history.back()");
 		script.println("</script>");
 	}else{
@@ -33,14 +34,15 @@
 		if(result == -1){
 			PrintWriter script = response.getWriter();
 			script.println("<script>");
-			script.println("alter('글쓰기에 실패했습니다.')");
+			script.println("alert('글쓰기에 실패했습니다.')");
 			script.println("history.back()");
 			script.println("</script>");
 		}else{
 			PrintWriter script = response.getWriter();
 			script.println("<script>");
-			script.println("location.href = 'QnA.jsp'");
+			script.println("alert('글이 등록되었습니다.')");
 			script.println("</script>");
+			response.sendRedirect("QnA.jsp");
 		}
 	}
 	%>

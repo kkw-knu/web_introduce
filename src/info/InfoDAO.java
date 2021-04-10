@@ -15,8 +15,8 @@ public class InfoDAO {
 			String url = "jdbc:oracle:thin:@localhost:1521:xe";
 			String id = "scott";
 			String pw = "1234";
-			Class.forName(driver);
 			con = DriverManager.getConnection(url, id, pw);
+			Class.forName(driver);
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
@@ -70,9 +70,8 @@ public class InfoDAO {
 		
 	}
 	
-	public ArrayList<Info> getList(){//게시글을 10개 불러올수 있도록 하는 과정
+	public ArrayList<Info> getList(){
 		String sql = "SELECT * from info where infoavailable=1 order by infoid desc";
-		//위의 sql문은 모든 데이터를 infoID가 ?보다 작은 값들을 불러오고 삭제되지 않은 게시물이여야 한다. 그것을 내림차순으로 정리하고 10개로 제한을 한다.
 		ArrayList<Info> list = new ArrayList<Info>(); //Info에서 나오는 값을 저장할 인스턴스 생성
 		try {
 			PreparedStatement pstmt = con.prepareStatement(sql); 
@@ -130,5 +129,31 @@ public class InfoDAO {
 			e.printStackTrace();
 		}
 		return null; //list를 받음
+	}
+	
+	public int update(int infoID, String infoTitle, String infoContent) {
+		String sql = "update info set infotitle =?, infoContent = ? where infoID =?"; //꼭 데이터베이스의 순서대로 넣어줘야함
+		try {
+			PreparedStatement pstmt = con.prepareStatement(sql); 
+			pstmt.setString(1, infoTitle); //게시물번호
+			pstmt.setString(2, infoContent); //게시물제목
+			pstmt.setInt(3, infoID); //게시물번호
+			return pstmt.executeUpdate();
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		return -1; //데이터베이스 오류시 반환
+	}
+	
+	public int delete(int infoID) {
+		String sql = "update info set infoavailable = 0 where infoID =?"; //값을 바꿔주는 것으로 삭제표시
+		try {
+			PreparedStatement pstmt = con.prepareStatement(sql); 
+			pstmt.setInt(1, infoID); //게시물번호
+			return pstmt.executeUpdate();
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		return -1; //데이터베이스 오류시 반환
 	}
 }
