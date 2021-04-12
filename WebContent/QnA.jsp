@@ -8,24 +8,24 @@
 <!DOCTYPE html>
 <html>
 	<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	<meta name="viewport" content="width=device-width">	
 	<meta charset="EUC-UTF-8">
 	<meta name="Description" content="초보개발자가 처음 개발해보는 자신만을 위한 웹 페이지입니다.">
 	<meta name="Keyword" content="웹개발, 프론트엔드, 백엔드, 김건우, 거누, html, css, java, javascript, tomcat">
 	<meta name="author" content="kim kun woo">
 	<meta lang="ko">
-	<title>introduce | kkw</title>
+	<title>무엇이든 물어보세요</title>
     <style>
     </style>
         <link
 	    href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@700&family=Noto+Sans+KR:wght@700&display=swap"
 	    rel="stylesheet">
 	    <link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="/web/css/init.css" rel="stylesheet" type="text/css">
-        <link href="/web/css/Header.css" rel="stylesheet" type="text/css">
-		<link href="/web/css/Footer.css" rel="stylesheet" type="text/css">
+		<link href="css/init.css" rel="stylesheet" type="text/css">
+        <link href="css/Header.css" rel="stylesheet" type="text/css">
+		<link href="css/Footer.css" rel="stylesheet" type="text/css">
 		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link rel="icon" href="/web/css/tech-icons/favicon.png">
+		<link rel="icon" href="css/tech-icons/favicon.png">
 		<script src="https://kit.fontawesome.com/012d5a0fd2.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
@@ -38,15 +38,16 @@
 		<div>
 			<header class="NavBar">
 				<nav>
-					<span class="menuBar"><a href="/web/Home.jsp">HOME</a></span>
-					<span class="menuBar"><a href="/web/About.jsp">ABOUT</a></span>
-					<span class="menuBar"><a href="/web/Skill.jsp">SKILL</a></span>
-					<span class="menuBar"><a href="/web/QnA.jsp">QnA</a></span>
+					<span class="menuBar"><a href="index.jsp">HOME</a></span>
+					<span class="menuBar"><a href="About.jsp">ABOUT</a></span>
+					<span class="menuBar"><a href="Skill.jsp">SKILL</a></span>
+					<span class="menuBar"><a href="QnA.jsp">QnA</a></span>
 					<span class="menuBarimg"></span>
 				</nav>
 			</header>
 			<main>
 			<div class="Box"></div>
+				<h1>데이터베이스 연결중이라 아직 동작이 안됩니다.</h1>
 				<table border="1" style="width:600px; margin:0 auto; text-align:center; margin-top:20px;">
 					<thead>
 						<tr>

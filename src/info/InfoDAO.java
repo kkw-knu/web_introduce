@@ -11,10 +11,10 @@ public class InfoDAO {
 	//데이터베이스 연결부분
 	public InfoDAO() {
 		try {
-			String driver = "oracle.jdbc.driver.OracleDriver";
-			String url = "jdbc:oracle:thin:@localhost:1521:xe";
-			String id = "scott";
-			String pw = "1234";
+			String driver = "com.mysql.jdbc.Drievr";
+			String url = "jdbc:mysql://localhost:3306/
+			String id = 
+			String pw = 
 			con = DriverManager.getConnection(url, id, pw);
 			Class.forName(driver);
 		}catch(Exception e) {
@@ -23,7 +23,7 @@ public class InfoDAO {
 	}
 	//preparedStatment를 안에설정한이유는 여러개의 함수를 쓰기때문에 겹쳐서 오류가 생길까봐 이다.
 	public String getDate() {//서버의 현재시간을 받아오는 것
-		String sql = "select sysdate from dual";
+		String sql = "select now()";
 		try {
 			PreparedStatement pstmt = con.prepareStatement(sql); 
 			res = pstmt.executeQuery();
@@ -35,7 +35,6 @@ public class InfoDAO {
 		}
 		return ""; //데이터베이스 오류시 반환
 	}
-	
 	public int getNext() {//게시글 번호
 		String sql = "SELECT infoID from info order by infoID desc"; //가장 마지막의 번호 를 출력하기 위함
 		try {

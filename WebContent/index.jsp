@@ -5,7 +5,7 @@
 <html>
 	<head>
 	<!-- 반응형 웹 설정을 위한 과정 -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	<meta name="viewport" content="width=device-width">	
 	<meta charset="EUC-UTF-8">
 	<!-- 문서에 대한 설명 -->
 	<meta name="Description" content="초보개발자가 처음 개발해보는 자신만을 위한 웹 페이지입니다.">
@@ -21,31 +21,31 @@
 	    href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@700&family=Noto+Sans+KR:wght@700&display=swap"
 	    rel="stylesheet">
 	    <link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="/web/css/init.css" rel="stylesheet" type="text/css">
-        <link href="/web/css/Header.css" rel="stylesheet" type="text/css">
-		<link href="/web/css/Footer.css" rel="stylesheet" type="text/css">
-		<link href="/web/css/Homemain.css" rel="stylesheet" type="text/css">
+		<link href="css/init.css" rel="stylesheet" type="text/css">
+        <link href="css/Header.css" rel="stylesheet" type="text/css">
+		<link href="css/Footer.css" rel="stylesheet" type="text/css">
+		<link href="css/Homemain.css" rel="stylesheet" type="text/css">
 		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link rel="icon" href="/web/css/tech-icons/favicon.png">
+		<link rel="icon" href="css/tech-icons/favicon.png">
 		<script src="https://kit.fontawesome.com/012d5a0fd2.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
 		<div>
 			<header class="NavBar">
 				<nav>
-					<span class="menuBar"><a href="/web/Home.jsp">HOME</a></span>
-					<span class="menuBar"><a href="/web/About.jsp">ABOUT</a></span>
-					<span class="menuBar"><a href="/web/Skill.jsp">SKILL</a></span>
-					<span class="menuBar"><a href="/web/QnA.jsp">QnA</a></span>
+					<span class="menuBar"><a href="index.jsp">HOME</a></span>
+					<span class="menuBar"><a href="About.jsp">ABOUT</a></span>
+					<span class="menuBar"><a href="Skill.jsp">SKILL</a></span>
+					<span class="menuBar"><a href="QnA.jsp">QnA</a></span>
 					<span class="menuBarimg"></span>
 				</nav>
 			</header>
 			<main>
-				<div class="Box"></div>
+				<div class="Box"><img src="css/mainimage.jpg" alt="main" style="width:60px; height:60px;"></div>
 				<div style="width: 1000px; height: 500px; margin-top:50px;">
 				<div style="width: 500px; height: 500px;float: left;">
 					<div class="picturebox"></div>
-					<div class="maintext"><p>26세 개구쟁이의 개발자 도전기<br>2021.02.04 ~ ing</p></div>
+					<div class="maintext"><p>26세 비?전공자의 개발자 도전기<br>2021.02.04 ~ ing</p></div>
 				</div>
 				<div style="width: 500px; height: 250px; float: left;">
 				<div class="namebox"><h1>김건우 <span> kimkunwoo</span></h1></div>
@@ -59,28 +59,28 @@
 					<h3>🛠 technology i have used 🛠</h3></p>
 					<br>
 					<div class="maintechbox_2">
-						<div class="techimage" onclick="location='/web/iconjsp/gitjsp.jsp'">
-						<img src="/web/css/tech-icons/gitimage.png" alt="Git"><div>Git</div></div>
-						<div class="techimage" onclick="location='/web/iconjsp/javascriptjsp.jsp'">
-						<img src="/web/css/tech-icons/javascriptimage.png" alt="Javascript"><div>Javascript</div></div>
-						<div class="techimage" onclick="location='/web/iconjsp/oraclejsp.jsp'">
-						<img src="/web/css/tech-icons/oracleimage.png" alt="Oracle"><div>Oracle</div></div>
-						<div class="techimage" onclick="location='/web/iconjsp/pythonjsp.jsp'">
-						<img src="/web/css/tech-icons/pythonimage.png" alt="Python"><div>Python</div></div>
-						<div class="techimage" onclick="location='/web/iconjsp/solutionjsp.jsp'">
-						<img src="/web/css/tech-icons/solutionimage.png" alt="solution"><div>Solution</div></div>
-						<div class="techimage" onclick="location='/web/iconjsp/springjsp.jsp'">
-						<img src="/web/css/tech-icons/springimage.png" alt="spring"><div>Spring</div></div>
-						<div class="techimage" onclick="location='/web/iconjsp/javajsp.jsp'">
-						<img src="/web/css/tech-icons/javaimage.png" alt="java"><div>Java</div></div>
-						<div class="techimage" onclick="location='/web/iconjsp/html5jsp.jsp'">
-						<img src="/web/css/tech-icons/html5image.png" alt="html5"><div>Html5</div></div>
-						<div class="techimage" onclick="location='/web/iconjsp/css3jsp.jsp'">
-						<img src="/web/css/tech-icons/css3image.png" alt="css3"><div>Css3</div></div>
-						<div class="techimage" onclick="location='/web/iconjsp/bootstrapjsp.jsp'">
-						<img src="/web/css/tech-icons/Bootstrapimage.png" alt="Bootstrap"><div>Bootstriap</div></div>
-						<div class="techimage" onclick="location='/web/iconjsp/cjsp.jsp'">
-						<img src="/web/css/tech-icons/c_langimage.png" alt="C"><div>C</div></div>
+						<div class="techimage" onclick="location='iconjsp/gitjsp.jsp'">
+						<img src="css/tech-icons/gitimage.png" alt="Git"><div>Git</div></div>
+						<div class="techimage" onclick="location='iconjsp/javascriptjsp.jsp'">
+						<img src="css/tech-icons/javascriptimage.png" alt="Javascript"><div>Javascript</div></div>
+						<div class="techimage" onclick="location='iconjsp/oraclejsp.jsp'">
+						<img src="css/tech-icons/oracleimage.png" alt="Oracle"><div>Oracle</div></div>
+						<div class="techimage" onclick="location='iconjsp/pythonjsp.jsp'">
+						<img src="css/tech-icons/pythonimage.png" alt="Python"><div>Python</div></div>
+						<div class="techimage" onclick="location='iconjsp/solutionjsp.jsp'">
+						<img src="css/tech-icons/solutionimage.png" alt="solution"><div>Solution</div></div>
+						<div class="techimage" onclick="location='iconjsp/springjsp.jsp'">
+						<img src="css/tech-icons/springimage.png" alt="spring"><div>Spring</div></div>
+						<div class="techimage" onclick="location='iconjsp/javajsp.jsp'">
+						<img src="css/tech-icons/javaimage.png" alt="java"><div>Java</div></div>
+						<div class="techimage" onclick="location='iconjsp/html5jsp.jsp'">
+						<img src="css/tech-icons/html5image.png" alt="html5"><div>Html5</div></div>
+						<div class="techimage" onclick="location='iconjsp/css3jsp.jsp'">
+						<img src="css/tech-icons/css3image.png" alt="css3"><div>Css3</div></div>
+						<div class="techimage" onclick="location='iconjsp/bootstrapjsp.jsp'">
+						<img src="css/tech-icons/Bootstrapimage.png" alt="Bootstrap"><div>Bootstriap</div></div>
+						<div class="techimage" onclick="location='iconjsp/cjsp.jsp'">
+						<img src="css/tech-icons/c_langimage.png" alt="C"><div>C</div></div>
 					</div>
 					</div>
 				</div>
